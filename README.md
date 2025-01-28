@@ -21,3 +21,9 @@ public Object doTransaction(ProceedingJoinPoint pjp) throws Throwable {
     }
 }
 ```
+
+### 포인트컷 execution 표현식
+- `execution(접근제어자? 반환타입 선언타입?메서드이름(파라미터) 예외?)`
+  - 메서드 실행 조인 포인트를 매칭한다.
+  - ? 는 생략 가능을 뜻함.
+  - * 같은 패턴 사용 가능.
